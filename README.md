@@ -4,10 +4,11 @@
 A financial data analysis project focused on exploring and analyzing financial datasets to extract meaningful insights.
 
 ## Team Members
-- Team Member 1
-- Team Member 2
-- Team Member 3
-- Team Member 4
+- Bryan Le
+- Justin Nguyen
+- Carolyna Sias
+- Emily Williams
+- Ngoc Huy Tran
 
 ## Dataset Description
 This project uses financial datasets to perform various analyses. The datasets include:
