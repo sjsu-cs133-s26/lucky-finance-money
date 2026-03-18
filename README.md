@@ -1,7 +1,10 @@
 # Lucky Finance Money
 
 ## Project Overview
-A financial data analysis project focused on exploring and analyzing financial datasets to extract meaningful insights.
+This repository now uses the Kaggle **Airline Delay** dataset for data analysis and modeling work.
+
+- Dataset link: https://www.kaggle.com/datasets/sriharshaeedala/airline-delay
+- Main goal: analyze delay patterns and build insights around flight punctuality.
 
 ## Team Members
 - Bryan Le
@@ -10,35 +13,36 @@ A financial data analysis project focused on exploring and analyzing financial d
 - Emily Williams
 - Ngoc Huy Tran
 
-## Dataset Description
-This project uses financial datasets to perform various analyses. The datasets include:
-- Financial market data (stocks, bonds, commodities, etc.)
-- Economic indicators
-- Transaction records
+## Dataset
+Source: Kaggle - Airline Delay (by sriharshaeedala)
 
-For detailed information on how to obtain the datasets, please refer to the `data/` folder.
+Typical fields in this dataset include flight date information, carrier, origin/destination airports, and delay values. Exact column names can vary based on the downloaded version.
 
 ## Getting Started
-1. Clone this repository
-2. Follow the instructions in the `data/` folder to download the required datasets
-3. Install dependencies (see requirements.txt if available)
-4. Run the analysis scripts
+1. Clone this repository.
+2. Download the dataset from Kaggle:
+	- https://www.kaggle.com/datasets/sriharshaeedala/airline-delay
+3. Place the raw downloaded file(s) in `data/raw/`.
+4. Keep any cleaned or transformed outputs in `data/processed/`.
+5. Run your analysis notebooks/scripts against files in `data/raw/` or `data/processed/`.
+
+## Quick Download with Kaggle CLI (Optional)
+If you have Kaggle API credentials configured:
+
+```bash
+kaggle datasets download -d sriharshaeedala/airline-delay -p data/raw --unzip
+```
 
 ## Project Structure
-```
+```text
 lucky-finance-money/
-├── data/              # Dataset download instructions
-├── README.md          # Project documentation
-└── .gitignore         # Git ignore file
+├── data/
+│   ├── README.md      # Dataset download/setup instructions
+│   ├── raw/           # Original files from Kaggle
+│   └── processed/     # Cleaned/transformed datasets
+└── README.md          # Project documentation
 ```
-# lucky-finance-money
 
-## Introduction
-
-Welcome to the **Lucky Finance Money** project! Our team is dedicated to exploring and developing innovative solutions in the world of finance and money management. 
-
-### Team Theme: Finance & Money Management
-
-Our focus is on creating tools and applications that help individuals and organizations better understand, track, and optimize their financial health. From budgeting and expense tracking to investment analysis and financial forecasting, we aim to make financial management more accessible and effective.
-
-**Note:** The specific direction and features of our project are still being decided. We're in the early stages of planning and exploring various possibilities in the financial technology space. Stay tuned for updates as we refine our vision and begin implementation!
+## Notes
+- Do not commit large dataset files to this repository.
+- Use `.gitignore` to keep raw/processed data files out of version control.
